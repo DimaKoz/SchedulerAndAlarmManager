@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JobScheduler</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Scheduler Fragment</string>
+    <string name="third_fragment_label">Alarm Manager Fragment</string>
+    <string name="scheduler">Scheduler</string>
+    <string name="alarm_manager">Alarm Manager</string>
+    <string name="previous">Previous</string>
+    <string name="schedule">Schedule</string>
+    <string name="restart">Restart</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

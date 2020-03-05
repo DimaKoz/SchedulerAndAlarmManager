@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="ru.otus.demo.jobscheduler.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SchedulerFragment"
+            app:destination="@id/SchedulerFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_AlarmManagerFragment"
+            app:destination="@id/AlarmManagerFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SchedulerFragment"
+        android:name="ru.otus.demo.jobscheduler.SchedulerFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_scheduler">
+
+        <action
+            android:id="@+id/action_SchedulerFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlarmManagerFragment"
+        android:name="ru.otus.demo.jobscheduler.AlarmManagerFragment"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/fragment_alarm_manager">
+
+        <action
+            android:id="@+id/action_AlarmManagerFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+    </fragment>
+
+</navigation>
